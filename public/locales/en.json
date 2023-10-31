@@ -1,0 +1,350 @@
+{
+    "header": {
+        "navbar": {
+            "new_arrivals": "NEW ARRIVALS",
+            "suitcases": "SUITCASES",
+            "bags": "BAGS",
+            "accessories": "ACCESSORIES",
+            "shop_all": "SHOP ALL",
+            "guides_and_collections": "GUIDES & COLLECTIONS"
+        },
+        "dropdown": {
+            "dropdown_header":{
+                "shop_by_size": "SHOP BY SIZE",
+                "shop_by_collection": "SHOP BY COLLECTION",
+                "featured": "FEATURED",
+                "shop_by_category": "SHOP BY CATEGORY",
+                "gift_guides": "GIFT GUIDES",
+                "city_guides": "CITY GUIDES"
+            },
+            "dropdown_content": {
+                "shop_all_suitcases": "Shop all suitcases",
+                "carry_ons": "Carry-ons",
+                "checked": "Checked",
+                "compare_carry": "Compare carry-ons",
+                "compare_check": "Compare checked",
+
+                "classic": "Classic",
+                "flex": "Flex",
+                "aluminium": "Aluminium",
+                
+                "iconic": "Iconic suitcases, redesigned",
+                "sets": "Suitcases sets",
+                "fall_for_travel": "Fall for travel",
+                "shop_limited": "SHOP LIMITED EDITION GLOSS",
+    
+                "shop_all_bags": "Shop all bags",
+                "duffles": "Duffles",
+                "backpacks": "Backpacks",
+                "totes": "Totes",
+                "cross": "Crossbodies",
+                "daily": "Daily",
+                "overnight": "Overnight",
+                "weekend": "Weekend",
+                "stays": "Extended stays",
+                "sleeve": "Attachable sleeve",
+                "item": "Personal item",
+                "laptop": "Laptop frinedly",
+                "bag_limited": "NEW LIMITED EDITION OUTDOOR BAGS",
+    
+                "shop_accessories": "Shop all accessories",
+                "packing": "Packing organizers",
+                "toiletry": "Toiletry bags",
+                "tech": "Tech organizers",
+                "essential": "In-flight essentials",
+                "goods": "Small leather goods",
+                "pack": "PACK EVEN MORE IN",
+    
+                "best_sellers": "Best sellers",
+                "get_organized": "Get organized",
+                "gift_guide": "Gift guide",
+                "gift_card": "Gift cards",
+                "lisbon": "Away in Lisbon",
+                "mexico": "Away in Mexico City",
+                "lake": "Away in Silver Lake",
+                "upgrade": "UPGRADE YOUR TRAVEL UNIFORM"
+            }
+        },
+    
+        "header_right":{
+            "login": "LOG IN",
+            "hi": "Hi There!",
+            "search": "Search products, features",
+            "search_btn": "SEARCH"
+        }
+    },
+
+    "footer": {
+        "shop": {
+            "title": "SHOP",
+            "suitcase": "Suitcases",
+            "bags": "Bags",
+            "accessories": "Accessories",
+            "best": "Best Sellers",
+            "new": "New Arrivals",
+            "all": "Shop All",
+            "card": "Gift Card"
+        },
+
+        "about": {
+            "title": "ABOUT",
+            "story": "Our story",
+            "stores": "Our stores",
+            "career": "Careers",
+            "corporate": "Corporate gifting",
+            "impact": "Impact",
+            "press": "Press",
+            "refer": "Refer a friend",
+            "sustainability": "Sustainability"
+        },
+
+        "help": {
+            "title": "GET HELP",
+            "order": "Order Tracking",
+            "exchange": "Make an exchange",
+            "return": "Make a return",
+            "contact": "Contact us"
+        },
+
+        "faqs": {
+            "faq_title": "FAQS",
+            "faq": "All FAQs",
+            "repairs": "Warranty & repairs"
+        }, 
+
+        "footer_sign": {
+            "footer_sign_title": "Sign up for our emails",
+            "sign_info": "We’ll send you updates on our latest launches and more. Need to take off? Unsubscribe at any time.",
+            "you_in": "You're in!",
+            "message": "Look out for a welcome email.",
+            "email_validation": "Please enter a valid email address.",
+            "privacy": "Privacy policy",
+            "terms": "Terms & conditions",
+            "accesibility": "Accessibility"
+        },
+
+        "footer_bottom": {
+            "privacy": "Privacy policy",
+            "terms": "Terms & conditions",
+            "accessibility": "Accessibility"
+        }
+    },
+
+    "home_sections": {
+        "hero": {
+            "hero_title1": "TRUSTED BY",
+            "hero_title2": "MILLIONS OF",
+            "hero_title3": "TRAVELERS",
+            "hero_btn": "SHOP NOW"
+        },
+    
+        "favourite":{
+            "title_span_first": "A few of our",
+            "title_span_second": "FAVORITES"
+        },
+    
+        "travel": {
+            "smoothly": "TRAVEL SMOOTHLY",
+            "travel_title_one": "UPGRADE YOUR TRAVEL UNIFORM",
+            "steps": "Step 1: Choose your suitcase. Step 2: Add your bag. Step 3: Book that trip. (Yes, it's that easy.)",
+            "suitcase_btn": "SHOP SUITCASES",
+            "bags_btn": "SHOP BAGS",
+            "fresh": "FRESH BAGS FOR FRESH AIR",
+            "travel_title_two": "Made for the outdoors",
+            "time_fall": "Just in time for fall: new limited edition Mustard, Wave, and Navy weather-resistant bags and backpacks for all your outdoor adventures.",
+            "shop_btn": "SHOP NOW"
+        },
+    
+        "slider": {
+            "title": "HOT OFF THE PRESS",
+            "slide_one": "Though Away has only been around for seven years, the New York-based brand has left its mark on the world—just visit any airport to see for yourself.",
+            "slide_two": "The suitcase that launched a thousand imitators is still best in show. January 31, 2023.",
+            "slide_three": "Away’s latest drop is a sleek, streamlined and updated take on the suitcases that first put the brand on the map."
+        },
+    
+        "getting_money": {
+            "title": "Give &20, get &20",
+            "info": "Everyone deserves to get away. Share with your friends and we'll give them (and you) $20 off any Away suitcase or bag.",
+            "link": "Terms apply",
+            "btn": "LEARN MORE"
+        },
+    
+        "country": {
+            "name": "Country",
+            "days": "Mon-Fri",
+            "weekend": "Sun",
+            "link": "SEE STORE DETAILS"
+        }
+    },
+
+    "shop_all": {
+        "title": "SHOP ALL",
+        "info": "Seamless travel starts here. Explore thoughtfully designed luggage, bags, and accessories for wherever you are (and wherever you’re going).",
+        "product_count": "Products"
+    },
+
+    "cart": {
+        "title": "Your cart",
+        "info": "Your cart is empty. Let's change that",
+        "shop_suit": "SHOP SUITCASES",
+        "shop_bag": "SHOP BAGS",
+        "shop_accessories": "SHOP ACCESSORIES",
+        "advice": "Add one (or two) more",
+        "add_btn": "ADD",
+        "coast": "Coast",
+        "ship": "Free standard shipping on orders over $100",
+
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "free": "FREE",
+        "total": "Total",
+        "checkout_btn": "CHECKOUT"
+    },
+
+    "checkout_page": {
+        "address": "Shipping Address",
+        "order": "Order summary"
+    },
+
+    "account_page": {
+        "title": "Edit Account Details",
+        "account_btn": "SAVE CHANGES",
+        "change_pwd": "Change Password",
+        "sign_out": "SIGN OUT"
+    },
+
+    "contact_page":{
+        "title": "CONTACT US",
+        "info": "Looking for help? Let us know—we’re here for you.",
+        "hours": "Hours: 10AM - 6PM ET (US)",
+        "day": "We'll get back to you within 1-2 days",
+        "link": "LIVE CHAT",
+        "form": "GET IN TOUCH",
+        "get_info": "Let us know how we can help by completing the form. We typically respond in 1 - 2 business days."
+    },
+
+    "about_page": {
+        "about_title_one": "# Our why",
+        "about_content_one": "We believe the more we travel, the better we all become. That’s why our travel essentials are designed to last (and last) for every trip to come, so you can get out there and explore.",
+        "about_title_two": "# Our approach",
+        "about_content_two": "We’re travelers, and our experiences inform our approach to the things we make. Simply put—our luggage is designed by travelers, for travelers. At Away, you’ll find suitcases, bags, and accessories built with thoughtful details to make each and every journey more seamless. We’re transforming travel to inspire you to get Away more and see more of the world along with us.",
+        "about_title_three": "# Our travel essentials",
+        "about_content_three": "Our suitcases, bags, and accessories use materials—from polycarbonate and aluminum to water-resistant nylon—that are not only sleek and lightweight, but also high-performing, durable, and ready for whatever comes up along the way. When it comes to our luggage, the details matter, especially since they’re intentional and functional, to make the journey (from packing to unpacking and storing) seamless."
+    },
+
+    "product_detail": {
+        "add_btn": "ADD TO CART",
+        "info": {
+            "durable": "Durable, lightweight shell",
+            "wheel": "360° wheels",
+            "interior": "Interior compression",
+            "laundry": "Laundry bag",
+            "grab": "Underside grab handle",
+            "days": " 4-7 days"
+        },
+
+        "faq": {
+            "size_detail": "SIZE & DETAILS",
+            "size_info": "Crafted with water-resistant nylon and leather trim. New extended zipper opening for easy access and visibility to main compartment",
+            "warranty": "WARRANTY & RETURN POLICY",
+            "warranty_info": "We want you to love everything about getting Away—which is why we offer free returns and exchanges on unused items for the first 100 days. We can only accept returns on unused items, so please gently test them out at home before traveling with them."           
+        }
+    },
+
+    "not_found": {
+        "title": "Sorry, we traveled far and wide, but couldn’t find the page you were looking for.",
+        "info1": "This page either doesn’t exist or has been removed. Head back to our",
+        "info2": ", or shop by category below.",
+        "link": "homepage",
+        "shop_by_category": "SHOP BY CATEGORY"
+    },
+
+    "login_sign": {
+        "title": "HELLO",
+        "tab_one": "LOG IN",
+        "tab_two": "SIGN UP",
+        "login_btn": "LOG IN",
+        "sign_btn": "SIGN UP",
+        "forgot_pwd": "Forgot Password",
+        "sign_bottom": "By creating an account, you agree to our",
+        "sign_bottom2":  "Privacy Policy",
+        "text3": "and",
+        "text4": "Terms",
+        "text5": "We’ll send you updates on all things Away. Need to take off? Unsubscribe anytime."
+    },
+
+    "forgot_password": {
+        "info": "Please enter the email address associated with your account. You will shortly recieve an email to reset your password."
+    },
+
+    "form": {
+        "name": "First Name",
+        "name_validation": "Name is required",
+
+        "surname": "Last Name",
+        "surname_validation": "Last Name is required",
+
+        "full_name": "Full Name",
+        "full_name_validation": "Full Name is required",
+
+        "email": "Email Address",
+        "email_taken": "Email is already in use",
+        "email_validation": "Email is required",
+        "email_validation_two": "Invalid email address",
+
+        "password": "Password",
+        "new_pwd": "New Password",
+        "new_pwd_validation": "New password is required",
+
+        "current_pwd": "Current Password",
+        "curr_pwd_validation": "Current password is required",
+
+        "repeat_pwd": "Repeat New Password",
+        "confirm_pwd": "Confirm new password",
+
+
+        "pwd_validation": "Password is required",
+        "pwd_validation_two": "Password must be at least 8 characters",
+        "pwd_validation_three": "Password must contain at least one letter and one number",
+
+
+        "submit": "SUBMIT",
+
+        "address": "Address",
+        "address_validation": "Address is required",
+
+        "phone": "Phone Number",
+        "phone_validation": "Phone Number is required",
+        "phone_validation_two": "Please enter a valid phone number with only digits (0-9).",
+
+        "city": "City",
+        "city_validation": "City is required",
+
+        "help": "What can we help with?",
+        "message": "Message is required"
+
+    },
+
+    "swal": {
+
+        "success_message": {
+            "title":"Success",
+            "text": "You have successfully registered!"
+        },
+
+        "error_message": {
+            "title": "Error!",
+            "text": "An error occurred during registration"
+        },
+
+        "checkout_message": {
+            "title": "Your order has been received!",
+            "text": "Thank you for shopping with us."
+        },
+
+        "contact_message": {
+            "title": "Your message has been sent successfully!",
+            "text": "Will be in touch with you soon"
+        }
+    }
+}

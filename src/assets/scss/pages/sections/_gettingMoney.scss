@@ -1,0 +1,47 @@
+.gettingMoney{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 24px;
+    .container{
+        .row{
+            .leftSide{
+                width: 50%;
+                font-size: 32px;
+                font-weight: 400;
+            }
+            .rightSide{
+                width: 50%;
+                font-size: 1.125rem;
+                line-height: 1.5;
+                p{
+                    padding-bottom: 19px;
+                    .terms{
+                        color: #fff;
+                        text-decoration: underline;
+                    }
+                }
+                .link{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .gettingMoney{
+        .container{
+            .row{
+                display: flex;
+                flex-direction: column;
+                .leftSide{
+                    width: 100%;
+                    padding-bottom: 30px;
+                }
+                .rightSide{
+                    width: 100%;
+                }
+            }
+        }
+    }
+} 

@@ -1,0 +1,178 @@
+.footer {
+  background-color: #f7f0ea;
+  padding-bottom: 30px;
+  .container {
+    .row {
+      padding: 48px 0;
+      .footerMenus {
+        display: flex;
+        width: 70%;
+        padding-right: 35px;
+        .footerMenuInfo {
+          margin-right: 21px;
+          width: 25%;
+          span {
+            font-size: 18px;
+            line-height: 1.1;
+            font-weight: 500;
+          }
+          .footerMenu {
+            margin-top: 24px;
+            li {
+              margin-bottom: 16px;
+              line-height: 1;
+              .footerLink {
+                color: #111;
+              }
+            }
+          }
+          .footerMenuIcons {
+            .footerIcons {
+              display: flex;
+              gap: 10px;
+              .icon {
+                .iconLink {
+                  font-size: 24px;
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footerRegister {
+        margin-top: 6px;
+        width: 30%;
+        h2 {
+          margin-bottom: 13px;
+          line-height: 1.05;
+          font-size: 36px;
+          font-weight: 400;
+        }
+        p {
+          margin-bottom: 16px;
+          line-height: 1.4;
+        }
+        .formWithValidation {
+          form {
+            display: flex;
+            input {
+              height: 56px;
+              padding: 0 16px;
+              width: 75%;
+            }
+            button {
+              color: #fff;
+              font-size: 14px;
+              height: 56px;
+              width: 15%;
+              background-color: #111;
+            }
+          }
+          p {
+            color: rgb(232, 10, 10);
+          }
+        }
+        .youIn {
+          height: 25%;
+          width: 100%;
+          background-color: #fff;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          .checkIcon {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+  .footerBottom {
+    .row {
+      padding: 16px 48px 14px 16px;
+      justify-content: space-between;
+      .box {
+        .select {
+          height: 6vh;
+          width: 100%;
+          outline: 0;
+          border: 0;
+          .menuItem {
+            .row {
+              .flagImg {
+                width: 10%;
+                height: 10%;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footerRightSide {
+        display: flex;
+        .footerLinks {
+          .footerBottomLinks {
+            color: #111;
+            margin-left: 38px;
+          }
+        }
+        .date {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1022px) {
+  .footer {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        .footerMenus {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          .footerMenuInfo {
+            width: 40%;
+            margin-bottom: 30px;
+          }
+        }
+        .footerRegister{
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+      }
+    }
+    .footerBottom {
+      .row {
+        flex-direction: column;
+        .language {
+          width: 100%;
+          height: 60px;
+          .flex {
+          }
+        }
+        .footerRightSide {
+          // display: flex;
+          flex-direction: column;
+          .footerLinks {
+            .footerBottomLinks {
+              line-height: 2;
+              margin-left: 0;
+            }
+          }
+          .date {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

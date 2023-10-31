@@ -1,0 +1,346 @@
+{
+    "header": {
+        "navbar": {
+            "new_arrivals": "YENİ GƏLƏN",
+            "suitcases": "ÇAMADANLAR",
+            "bags": "ÇANTALAR",
+            "accessories": "AKSESSUARLAR",
+            "shop_all": "HAMISI",
+            "guides_and_collections": "TƏHLİL VƏ KOLLEKSIYALAR"
+        },
+        "dropdown": {
+            "dropdown_header": {
+                "shop_by_size": "ÖLÇÜYƏ GÖRƏ ALIŞ-VERİŞ",
+                "shop_by_collection": "KOLLEKSIYAYA GÖRƏ ALIŞ-VERİŞ",
+                "featured": "SEÇİLƏNLƏR",
+                "shop_by_category": "KATEQORİYAYA GÖRƏ ALIŞ-VERİŞ",
+                "gift_guides": "HƏDİYYƏLƏR REHBERİ",
+                "city_guides": "ŞƏHƏRLƏR REHBERİ"
+            },
+            "dropdown_content": {
+                "shop_all_suitcases": "Bütün çamadan modelləri",
+                "carry_ons": "Əl çantası tipli çamadan",
+                "checked": "Təsdiqlənmiş çamadan",
+                "compare_carry": "Əl çantalarını müqayisə edin",
+                "compare_check": "Təsdiqlənmiş çamadanları müqayisə edin",
+                "classic": "Klassik çamadan",
+                "flex": "Flex çamadan",
+                "aluminium": "Alüminium çamadan",
+                "iconic": "İkonik çamadan, yenidən dizayn edildi",
+                "sets": "Çamadan dəsti",
+                "fall_for_travel": "Səyahət üçün payız məhsulları",
+                "shop_limited": "MƏHDUD SAYDA NƏFİS SERİYA ÇANTALAR",
+    
+                "shop_all_bags": "Bütün çantalar",
+                "duffles": "Çantalar",
+                "backpacks": "Sırt çantaları",
+                "totes": "Torbalı çantalar",
+                "cross": "Çapraz çantalar",
+                "daily": "Günlük çantalar",
+                "overnight": "Gecəlik çantalar",
+                "weekend": "Həftə sonu çantaları",
+                "stays": "Uzadılmış səyahətlər",
+                "sleeve": "Bağlanabilən kürək",
+                "item": "Şəxsi əşya çantası",
+                "laptop": "Laptop üçün uyğun çantalar",
+                "bag_limited": "YENİ MƏHDUD SAYDA XARİCİ ÇANTALAR",
+    
+                "shop_accessories": "Bütün aksessuarlar",
+                "packing": "Paketləmə orqanizatorları",
+                "toiletry": "Higienik çantalar",
+                "tech": "Texniki orqanizatorlar",
+                "essential": "Uçuş zamanı əlavələr",
+                "goods": "Kiçik dəri əşyalar",
+                "pack": "DAHA ÇOX ŞƏYİ AYAĞINIZA DAHİ ET",
+    
+                "best_sellers": "Ən çox satılanlar",
+                "get_organized": "Tövsiyələrimizə əsasən nizamlayın",
+                "gift_guide": "Hədiyyə rehberi",
+                "gift_card": "Hədiyyə kartları",
+                "lisbon": "Lizbon şəhərində Away",
+                "mexico": "Meksika şəhərində Away",
+                "lake": "Silver Lake'də Away",
+                "upgrade": "SEYAHƏT GİYİMİNİZİ TƏKMİL ETDİRİN"
+            }
+        },
+    
+        "header_right": {
+            "login": "GİRİŞ",
+            "hi": "SALAM!",
+            "search": "Məhsulları və xüsusiyyətləri axtar",
+            "search_btn": "AXTAR"
+        }
+    },
+
+    "footer": {
+        "shop": {
+            "title": "ALIŞ-VERİŞ",
+            "suitcase": "Çəmədan",
+            "bags": "Çantalar",
+            "accessories": "Aksessuarlar",
+            "best": "Ən Çox Satılanlar",
+            "new": "Yeni Gələnlər",
+            "all": "Hamısı",
+            "card": "Hədiyyə Kartı"
+        },
+
+        "about": {
+            "title": "HAQQIMIZDA",
+            "story": "Bizim tariximiz",
+            "stores": "Mağazalarımız",
+            "career": "Karyera",
+            "corporate": "Korporativ hədiyyələr",
+            "impact": "Təsir",
+            "press": "Mətbuat",
+            "refer": "Dostunuzu təqdim edin",
+            "sustainability": "Sürətli mövqe"
+        },
+
+        "help": {
+            "title": "KÖMƏK ALIN",
+            "order": "Sifariş izləmə",
+            "exchange": "Dəyişdirmək",
+            "return": "Qaytarmaq",
+            "contact": "Bizimlə əlaqə saxlayın"
+        },
+
+        "faqs": {
+            "faq_title": "SUALLAR",
+            "faq": "Bütün suallar",
+            "repairs": "Zəmanət və təmir"
+        }, 
+
+        "footer_sign": {
+            "footer_sign_title": "Əlaqə saxlamağımız üçün abunə olun",
+            "sign_info": "Ən son yeniliklərimiz və daha çoxunu sizə göndərəcəyik. Tələsən çıxmağa ehtiyacınız olsa da, hər hansı bir zaman abunəliyinizi ləğv edə bilərsiniz.",
+            "you_in": "Sən daxil oldun!",
+            "message": "Xoş gəldin mesajı üçün emailinizi yoxlayın",
+            "email_validation": "Email hesabını doğru yazın",
+            "privacy": "Məxfilik siyasəti",
+            "terms": "Şərtlər",
+            "accesibility": "Əlçatanlıq"
+        },
+
+        "footer_bottom": {
+            "privacy": "Məxfilik siyasəti",
+            "terms": "Şərtlər və qaydalar",
+            "accessibility": "Əlçatanlıq"
+        }
+    },
+
+    "home_sections": {
+        "hero": {
+            "hero_title1": "MİLYONLARCA",
+            "hero_title2": "SƏYYAH TƏRƏFİNDƏN",
+            "hero_title3": "GÜVƏNİLİR",
+            "hero_btn": "İNDİ AL"
+        },
+    
+        "favourite": {
+            "title_span_first": "BİZİM BİR NEÇƏ",
+            "title_span_second": "FAVORİTİMİZ"
+        },
+    
+        "travel": {
+            "smoothly": "SƏRRİYYƏTSİZ SƏYAHƏT EDİN",
+            "travel_title_one": "SƏYAHƏT GİYİMİNİZİ TƏKMİL EDİN",
+            "steps": "Maddə 1: Çamadanı seçin. Maddə 2: Çantanızı əlavə edin. Maddə 3: Səyahəti bron edin. (Bəli, bu qədər asandır.)",
+            "suitcase_btn": "ÇAMADAN ALIN",
+            "bags_btn": "ÇANTALARI ALIN",
+            "fresh": "TƏZƏ HAVA ÜÇÜN TƏZƏ ÇANTALAR",
+            "travel_title_two": "Açıq havada üçün hazırlanmışdır",
+            "time_fall": "Payız üçün yeni məhdud sayda Mustard, Wave və Navy hava şəraitarı çantaları və sırt çantaları.",
+            "shop_btn": "İNDİ AL"
+        },
+    
+        "slider": {
+            "title": "SƏRİYYƏTİN ƏN YENİ XƏBƏRLƏRİ",
+            "slide_one": "Away yalnız yeddinci il olmasına baxmayaraq, New York əsaslı brend dünyaya öz işarəsini qoyub – yalnız hər hansı bir hava limanını ziyarət edin və özünüz görün.",
+            "slide_two": "Miniatür modellərə miniatür çamadan yenə də şousunu təqdim edir. 31 yanvar 2023.",
+            "slide_three": "Away’in sonuncu nəşri markanın ilk olaraq tanınmasını təmin edən valenklərin izləyirək və yenidən dizayn edilmiş şıx və sadə bir nümayişi olur."
+        },
+    
+        "getting_money": {
+            "title": "$20 verin, $20 qazanın",
+            "info": "Hər kəsə getmək hüququ verilməlidir. Dostlarınızla paylaşın və onlara (və sizə) hər hansı bir Away valenki və ya çanta üçün $20 hədiyyə edəcəyik.",
+            "link": "Şərtlər tətbiq olunur",
+            "btn": "DAHA ÇOX ÖYRƏN"
+        },
+    
+        "country": {
+            "name": "Ölkə",
+            "days": "Bazar ertəsi-Cümə",
+            "weekend": "Bazar",
+            "link": "MAĞAZA DETALLARINI GÖSTƏR"
+        }
+    },
+
+    "shop_all": {
+        "title": "ALIŞ-VERİŞ",
+        "info": "Sərrsiz səyahət burada başlayır. Hər yerə (və hər yerə getməkdə olduğunuz yerdə) üçün nəzərdə tutulmuş bağlama, çanta və aksessuarları kəşf edin.",
+        "product_count": "Məhsul"
+    },
+
+    "cart": {
+        "title": "Sizin səbətiniz",
+        "info": "Sizin səbətiniz boşdur. Bunu dəyişdirmək üçün necədir.",
+        "shop_suit": "ÇAMADAN AL",
+        "shop_bag": "ÇANTA AL",
+        "shop_accessories": "AKSESSUAR AL",
+        "advice": "Bir (və ya iki) təklif əlavə edin",
+        "add_btn": "ƏLAVƏ ET",
+        "ship": "Sifarişlərin ödənişi üçün pulsuz standart çatdırılma üçün",
+        "coast": "Qiymet", 
+
+        "subtotal": "Yekun",
+        "shipping": "Çatdırılma",
+        "free": "PULSUZ",
+        "total": "Ümumi",
+        "checkout_btn": "AL"
+    },
+
+    "checkout_page": {
+        "address": "Çatdırılma ünvanı",
+        "order": "Sifariş özəti"
+    },
+
+    "account_page": {
+        "title": "Hesab məlumatlarını dəyişdirin",
+        "account_btn": "DƏYİŞİKLİKLƏRİ YADDA SAXLAYIN",
+        "change_pwd": "Şifrəni dəyişdirin",
+        "sign_out": "ÇIXIŞ"
+    },
+
+    "contact_page": {
+        "title": "BİZİMLƏ ƏLAQƏ SAXLAYIN",
+        "info": "Kömək lazımsa, bildirin - biz buradayıq.",
+        "hours": "Saatlar: 10:00-18:00 (ABŞ)",
+        "day": "1-2 gün ərzində sizə cavab verəcəyik",
+        "link": "CANLI SOHBƏT",
+        "form": "ƏLAQƏ SAXLAYIN",
+        "get_info": "Formu doldurmaqla bizə necə kömək edə biləcəyimizi bildirin. Biz adətən 1-2 iş günü ərzində cavab veririk."
+    },
+
+    "about_page": {
+        "about_title_one": "# Niyə biz",
+        "about_content_one": "Biz səyahətin daha çox olarsan, hamı daha yaxşı olur düşünürük. Bu səbəbdə səyahət əsaslarımız gələcək səyahətləriniz üçün hazırlanmışdır ki, siz daha çox gedin və tədqiq edəsiniz.",
+        "about_title_two": "# Bizim yanaşmamız",
+        "about_content_two": "Biz səyahətçilərik və təcrübələrimiz bizim hazırladığımız şeylərə olan yanaşmamızı təyin edir. Sadəcə deyək – valenklərimiz səyahətçilər tərəfindən, səyahətçilər üçün hazırlanır. Away'də sizə hər bir səyahətinizi daha səmələsiz etmək üçün düşüncəli detallarla hazırlanmış valenklər, çantalar və aksessuarlar tapa bilərsiniz. Biz səyahəti daha çox və daha çox görünmək və il ərzində dünyanın daha çoxunu görünmək üçün təkrar çeviririk.",
+        "about_title_three": "# Bizim səyahət əsaslarımız",
+        "about_content_three": "Çamadanlarımız, çantalarımız və aksessuarlarımız suvar polikarbonat və alüminiumdan su təzyiqinə davamlı və suqubdur, çoxu vəziyyətlər üçün hazırdır. Valenklərimiz və çantalarımız üçün detallar əhəmiyyətli olur, xüsusilə də onlar məqsədli və funksionaldır, kiçik ətraflı detaylar hər bir səyahəti (baxmaqdan, baxmaqdan və saxlamaqdan) daha səmələsiz edir."
+    },
+
+    "product_detail": {
+        "add_btn": "SƏBƏTƏ ƏLAVƏ ET",
+        "info": {
+            "durable": "Dayanıqlı, hafif qabıq",
+            "wheel": "360° tekerlər",
+            "interior": "İçərisi sıxışdırma",
+            "laundry": "Çamaşırxana çantası",
+            "grab": "Alt tərəf tutacaq",
+            "days": " 4-7 gün"
+        },
+
+        "faq": {
+            "size_detail": "ÖLÇÜ VƏ TƏFƏRRÜAT",
+            "size_info": "Su təzyiqinə davamlı naylon və dəri trim ilə hazırlanmışdır. Yeni geniş zip açılışı əsas məxməriyyətə asan giriş və görünürlük üçün naylonu əlavə edir.",
+            "warranty": "ZAMANET VƏ QAYTARIM ŞƏRTLƏRİ",
+            "warranty_info": "Biz sizin Getting Away haqqında hər şeyi sevmənizi istəyirik – bu səbəbdə əsasən tətbiq olunmamış əşyalar üçün ilk 100 gün pulsuz qaytarımlar və mübadilələr təklif edirik. Tətbiq olunmamış əşyalar üçün yalnız qaytarımları qəbul edə bilərik, bu səbəbdə onları səyahət etmədən əvvəl evdə yavaşca sınayın."
+        }
+    },
+
+    "not_found": {
+        "title": "Üzgünük. Bir çox yerlərə səyahət etdik, lakin axtardığınız səhifəni tapa bilmədik.",
+        "info": "Bu səhifə ya mövcud deyil, ya da silinib. Qayıdın və ya aşağıdakı kateqoriyalara görə alış-veriş edin.",
+        "link": "ana səhifə",
+        "shop_by_category": "KATEQORİYALAR ÜZRƏ ALIŞ-VERİŞ"
+    },
+
+    "login_sign": {
+        "title": "SALAM",
+        "tab_one": "DAXİL OL",
+        "tab_two": "QEYDİYYATDAN KEÇ",
+        "login_btn": "GİRİŞ",
+        "sign_btn": "QEYDİYYATDAN KEÇİN",
+        "forgot_pwd": "Şifrəni unutmusunuz?",
+        "sign_bottom": "Hesab yaratmaqla, siz bizim",
+        "sign_bottom2":  "qaydalarımız",
+        "text3": "və",
+        "text4": "tələblərimizlə",
+        "text5": "razılaşırsız. Sizə bütün Away məhsulları haqqında yeniliklər göndərəcəyik. Tələsən çıxmaq istəsəniz hər hansı bir zaman abunəliyi ləğv edə bilərsiniz."
+    },
+
+    "forgot_password": {
+        "forgot_info": "Hesabınıza əlaqələnmiş email ünvanını daxil edin. Şifrənizi yeniləmək üçün qısa bir müddət ərzində email alacaqsınız."
+    },
+
+    "form": {
+        "name": "Ad",
+        "name_validation": "Ad tələb olunur",
+
+        "surname": "Soyad",
+        "surname_validation": "Soyad tələb olunur",
+
+        "full_name": "Ad",
+        "full_name_validation": "Ad tələb olunur",
+
+
+        "help": "Necə kömək edə bilərik?",
+        "message": "Mesaj tələb olunur",
+
+        "submit": "Göndər",
+
+        "email": "Email",
+        "email_validation": "Email adresinizi daxil edin",
+        "email_validation_two": "Yanlış email formatı",
+        "email_taken": "Email artıq istifadə olunur",
+
+        "password": "Şifrə",
+        "new_pwd": "Yeni şifrə",
+        "new_pwd_validation": "Bu sahe teleb olunur",
+        
+        "current_pwd": "Cari şifrəniz",
+        "curr_pwd_validation": "Bu sahe teleb olunur",
+
+        "repeat_pwd": "Yeni şifrəni tekrarla",
+        "confirm_pwd": "Yeni şifrəni təsdiqləyin",
+
+        "pwd_validation": "Şifrənizi daxil edin",
+        "pwd_validation_two": "Şifrə ən az 8 xarakterdən ibarət olmalıdı",
+        "pwd_validation_three": "Şifrədə ən az bir hərf və ya rəqəm olmalıdı",
+
+        "phone": "Telefon nömrəsi",
+        "phone_validation": "Telefon nömrəsi tələb olunur",
+        "phone_validation_two": "Zəhmət olmasa yalnızca rəqəm yazın",
+
+        "city": "Şəhər",
+        "city_validation": "Şəhər tələb olunur",
+
+        "address": "Adres",
+        "address_validation": "Adres tələb olunur",
+
+        "match_pwd": "Şifrələr uyğun gəlmir"
+    },
+
+    "swal": {
+        "success_message": {
+            "title": "Uğurlu",
+            "text": "Siz uğurla qeydiyyatdan keçdiniz"
+        },
+
+        "error_message": {
+            "title": "Error!",
+            "text": "Qeydiyyat zamanı bir problem yaşandı"
+        },
+
+        "checkout_message": {
+            "title": "Sizin sifarişləriniz təsdiqləndi",
+            "text": "Alış-veriş etdiyiniz üçün təşəkkürlər."
+        },
+
+        "contact_message": {
+            "title": "Mesajınız uğurla göndərildi!",
+            "text": "Tezliklə sizinlə əlaqə saxlayacağıq"
+        }
+    }
+}

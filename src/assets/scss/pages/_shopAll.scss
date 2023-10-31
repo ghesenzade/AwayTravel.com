@@ -1,0 +1,81 @@
+.shopAll{
+  font-family: Arial, Helvetica, sans-serif;
+    .container{
+        .shopTexts{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 16px 0;
+            .shopHeaderText{
+                h1{
+                  font-weight: 400;
+                  padding-bottom: 16px;
+                }
+            }
+            .shopInfo{
+                p{
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin: 0 auto;
+                  width: 60%;
+                  font-size: 14px;
+                  line-height: 1.5;
+                  color: #111;
+                  text-align: center;
+                }
+            }
+        }
+        .allProducts{
+            .productCount{
+              display: flex;
+              justify-content: flex-end;
+                p{
+                  padding: 30px 0;
+                }
+            }
+            .products{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                
+            }
+        }
+    }
+}
+
+@media (max-width:1024px){
+  .shopAll{
+      .container{
+          .allProducts{
+              .products{
+                  .productCard{
+                      .productInfo{
+                        .productLink{
+                          p{
+                            font-size: 12px;
+                          }
+                        }
+                        
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+
+@media (max-width:768px){
+  .shopAll{
+      .container{
+        width: 100%;
+          .allProducts{
+              .products{
+                  .productCard{
+                    width: 50%;
+                    height: 100%;
+                  }
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.favSection {
+    padding: 40px 0;
+    @media(max-width:390px){
+        padding-top: 0;
+    }
+    .container {
+        .column {
+            display: flex;
+            flex-direction: column;
+            .favHeader {
+                text-align: center;
+                padding: 40px 0;
+                .fawSpan {
+                    font-family: "Dancing Script", sans-serif;
+                    font-size: 42px;
+                    margin-bottom: 16px;
+                }
+                .favouriteSpan {
+                    font-size: 54px;
+                }
+            }
+            
+            .favProducts {
+                .row {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .favSection{
+        .container{
+            width: 100%;
+            .column{
+                .favProducts{
+                    .row{
+                        flex-wrap: wrap;
+                        .productCard{
+                            width: 50%;
+                            height: 35em;
+                            padding-bottom: 100px;
+                            @media(max-width:390px){
+                                padding-bottom: 50px;
+                            }
+                            .productImg{
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .productInfo {
+                                padding: 16px 20px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:564px) {
+    .favSection{
+        .container{
+            width: 100%;
+            .column{
+                .favProducts{
+                    .row{
+                        flex-wrap: wrap;
+                        .productCard{
+                            width: 100%;
+                            height: 35em;
+                            margin-bottom: 75px;
+                            .productImg{
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .productInfo {
+                                padding: 16px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

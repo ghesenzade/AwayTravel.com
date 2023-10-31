@@ -1,0 +1,170 @@
+.contact{
+    .contactContent{
+        .contactTop{
+            width: 100%;
+            .contactImg{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .contactHeroText{
+                background-color: #000;
+                color: #fff;
+                padding: 100px;
+                width: 50%;
+                text-align: center;
+                .text{
+                    h1{
+                        margin-bottom: 24px;
+                        font-size: 56px;
+                        line-height: 1.05;
+                        font-weight: 400;
+                        
+                    }
+                    p{
+                        margin-bottom: 24px;
+                    }
+                }
+                .contactLinks{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .row{
+                        gap: 20px;
+                        .contactLink{
+                            align-items: center;
+                            .messageIcon{
+                                border-radius: 50%;
+                                width: 70px;
+                                height: 65px;
+                                background-color: bisque;
+                                text-align: center;
+                                transition: .3s ease all;
+                                margin-bottom: 16px;
+                                .iconLink{
+                                    .icon{
+                                        width: 40%;
+                                        height: 100%;
+                                        font-size: 18px;
+                                        color: #000;
+                                    }
+                                }
+                                &:hover{
+                                    background-color: #2d96cd;
+                                    .iconLink{
+                                        .icon{
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                            span{
+                                margin-bottom: 24px;
+                                width: 60%;
+                            }
+                            .link{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactBottom{
+            padding: 50px 0;
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .bottomContent{
+                    h2{
+                        font-size: 36px;
+                        line-height: 1.05;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        margin-bottom: 18px;
+                    }
+                    form{
+                        input
+                        {
+                            border: none;
+                            outline: 0;
+                            height: 60px;
+                            border-bottom: 1px solid #000;
+                        }
+                        .errorMessage{
+                            color: rgb(239, 9, 9);
+                            padding: 10px 0;
+                            text-align: left;
+                        }
+                        button{
+                            height: 50px;
+                            margin: 50px 0 80px;
+                            border: none;
+                            background-color: #000;
+                            color: #fff;
+                            transition: .3s ease all;
+                            &:hover{
+                                background-color: #403f3f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1118px){
+    .contact{
+        .contactContent{
+            .contactTop{
+                flex-direction: column;
+                .contactImg{
+                    width: 100%;
+                }
+                .contactHeroText{
+                    width: 100%;
+                    margin-top: -5px;
+                }
+            }
+            .contactBottom{
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:560px){
+    .contact{
+        .contactContent{
+            .contactTop{
+                .contactHeroText{
+                    padding: 50px 0;
+                    .text{
+                        h1{
+                            font-size: 48px;
+                        }
+                    }
+                    .contactLinks{
+                        .row{
+                            .contactLink{
+                                span{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contactBottom{
+                width: 100%;
+            }
+        }
+    }
+}

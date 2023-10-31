@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    padding-top: 56px;
+}
+
+.container{
+    width: 92%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    color: #000;
+    display: flex;
+    gap: 8px;
+    .arrowIcon{
+        transition: all .3s cubic-bezier(.215,.61,.355,1);
+    }
+    &:hover{
+        color: #370390;
+        .arrowIcon {
+            transform: translateX(10px);
+        }
+    }
+}
+.justifyBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.shopProduct{
+    background-color: #2c62d8;
+    color: #fff;
+    font-weight: 500;
+    height: 3rem;
+    letter-spacing: .05em;
+    line-height: 3rem;
+    padding: 0 20px;
+    transition: .3s ease all;
+    &:hover{
+        background-color: #0a4ddc;
+    }
+}

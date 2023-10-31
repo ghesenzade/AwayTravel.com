@@ -1,0 +1,30 @@
+@import "./base";
+
+//pages
+@import "../scss/pages/shopAll";
+@import "../scss/pages/productDetail";
+@import "../scss/pages/register";
+@import "../scss/pages/forgotPwd";
+@import "../scss/pages/notFound";
+@import "../scss/pages/cart";
+@import "../scss/pages/contact";
+@import "../scss/pages/account";
+@import "../scss/pages/checkOut";
+@import "../scss/pages/changePwd";
+
+//components
+@import "./components/header";
+@import "../scss/components/footer";
+@import "../scss/components/checkOutCard";
+@import "../scss/components/productCard";
+
+// sections
+@import "../scss/pages/sections/hero";
+@import "../scss/pages/sections/favSection";
+@import "../scss/pages/sections/travelSteps";
+@import "../scss/pages/sections/homeSlide";
+@import "../scss/pages/sections/gettingMoney";
+@import "../scss/pages/sections/awayInCountries";
+@import "../scss/pages/sections/aboutInfo";
+// @import "../scss/pages/sections/aboutTeam";
+

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.slider{
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media(max-width:550px){
+        padding: 0;
+    }
+
+    .sliderHead{
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400px;
+            font-size: 14px;
+            letter-spacing: 0.8px;
+        }
+    }
+    .slide{
+        width: 100%;
+        .mySwiper{
+            width: 100%;
+            height: 50vh;
+            margin-left: auto;
+            margin-right: auto;
+            .swiperSlide {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // width: 80%;
+                // height: 100%;
+                .column{
+                    .quote{
+                        max-width: 70%;
+                        margin: 0 auto;
+                        p{
+                            q{
+                                font-size: 56px;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                    .quoteLogo{
+                        margin: 20px auto 0;
+                        line-height: 60px;
+                        height: 50px;
+                        width: 20%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px){
+.slider{
+    .slide{
+        .mySwiper{
+            .swiperSlide {
+                .column{
+                    .quote{
+                        p{
+                            q{
+                                font-size: 42px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+}
+@media (max-width:850px){
+    .slider{
+        .slide{
+            .mySwiper{
+                .swiperSlide {
+                    .column{
+                        .quote{
+                            p{
+                                q{
+                                    font-size: 42px;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+@media (max-width:850px){
+    .slider{
+        .slide{
+            .mySwiper{
+                .swiperSlide {
+                    .column{
+                        .quote{
+                            p{
+                                q{
+                                    font-size: 32px;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+@media (max-width:524px){
+    .slider{
+        margin: 64px 0 0;
+        .slide{
+            .mySwiper{
+                .swiperSlide {
+                    .column{
+                        .quote{
+                            p{
+                                q{
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+@media (max-width:400px){
+    .slider{
+        margin: 64px 0 0;
+        .slide{
+            .mySwiper{
+                .swiperSlide {
+                    .column{
+                        .quote{
+                            p{
+                                q{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .quoteLogo{
+                            height: 30px;
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

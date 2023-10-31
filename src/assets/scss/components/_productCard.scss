@@ -1,0 +1,44 @@
+.productCard{
+    width: 25%;
+    height: 100%;
+      .productImgLink{
+        .productImg {
+          width: 100%; 
+          height: 100%;
+          overflow: hidden;
+          cursor: pointer;
+              img{
+                display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  transition: 0.3s;
+                  &:hover{
+                      transform: scale(1.1);
+                  }
+              }
+          }
+          
+      }
+      .productInfo{
+        margin: 16px 0 30px;
+        text-align: center;
+        .productLink{
+          color: #111;
+          line-height: 1.4;
+          p{
+            font-size: 16px;
+            padding: 0 0 16px;
+          }
+        }
+        .productDetail{
+          .price{
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.8px;
+            line-height: 1.5;
+          }
+          
+        }
+      }
+  }

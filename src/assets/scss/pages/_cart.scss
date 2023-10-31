@@ -1,0 +1,233 @@
+.cart{
+    .cartContent{
+        text-align: center;
+        .cartHeader{
+            padding: .625rem 1.25rem;
+            background-color: rgb(235, 238, 245);
+        }
+        .cartInfo{
+            padding: 100px 20px;
+            .cartTitle{
+                h1{
+                    font-size: 36px;
+                    font-weight: 400;
+                    padding-bottom: 10px;
+                }
+                p{
+                    line-height: 1.4;
+                    padding-bottom: 30px;
+                }
+            }
+            .productLinks{
+                .productLink{
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 60%;
+                    margin: 0 auto;
+                    .shopProduct{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+        .advices{
+            padding: 67px 0 0;
+            width: 100%;
+            .column{
+                .advicesTitle{
+                    h3{
+                        font-size: 36px;
+                        line-height: 1.05;
+                        
+                    }
+                }
+                .advicesCards{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    gap: 10px;
+                    padding: 37px 0 60px;
+                    .oneAdviceCard{
+                        width: 24%;
+                        padding: 27px 20px;
+                        border-radius: 10px;
+                        background-color: #fff;
+                        @media(max-width:1286px){
+                            width: 45%;
+                        }
+                        @media(max-width:768px){
+                            width: 80%;
+                        }
+                        .cardImg{
+                            .imgLink{
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                        .cardInfo{
+                            margin-bottom: 17px;
+                            .cardInfoLink{
+                                color: #000;
+                                .cardTitle{
+                                    h4{
+                                        font-size: 20px;
+                                        padding-top: 15px;
+                                        line-height: 1.1;
+                                        @media(max-width: 1024px){
+                                            font-size: 24px;
+                                        }
+                                    }
+                                    p{
+                                        padding-top: 10px;
+                                        font-size: 18px;
+                                        line-height: 1.4;
+                                    }
+                                }
+                            }
+                            button{
+                                background-color: #fff;
+                                font-size: 17px;
+                                font-weight: 500;
+                                height: 56px;
+                                letter-spacing: .05em;
+                                width: 80%;
+                                margin: 15px auto 0;
+                                transition: .3s ease all;
+                                &:hover{
+                                    background-color: #000;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.cartPage{
+    padding-bottom:  100px;
+    background-color: #f1f2f1;
+    .container{
+        .cartTitle{
+            font-size: 28px;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+        .cartContent{
+            gap: 50px;
+            @media(max-width:1300px){
+                flex-direction: column;
+            }
+            .cartContentParts{
+                background-color: #fff;
+                border-radius: 20px;
+            }
+            .renderCart{
+                width: 70%;
+                gap: 30px;
+                @media(max-width:1300px){
+                    width: 100%;
+                }
+                .cartInfo{
+                    height:40vh;
+                    padding: 0;
+                    @media(max-width:1300px){
+                        height: 35vh;
+                    }
+                    @media(max-width:1300px){
+                        height: 25vh;
+                    }
+                    .cartImg{
+                        border-radius: 20px;
+                        width: 40%;
+                        img{
+                            border-radius: 20px 0 0 20px;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .cartInfoRightSide{
+                        width: 60%;
+                        padding: 30px;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        @media(max-width:616px){
+                            gap: 20px;
+                        }
+                        .nameAndX{
+                            gap: 20px;
+                            h3{
+                                font-size: 24px;
+                                @media (max-width:768px){
+                                    font-size: 20px;
+                                }
+                                @media (max-width:500px){
+                                    font-size: 16px;
+                                }
+                                @media (max-width:390px){
+                                    font-size: 14px;
+                                    padding-left: -30px;
+                                }
+                            }
+                            .x{
+                                cursor: pointer;
+                            }
+                        }
+                        .numAndPrice{
+                            .numOfProduct{
+                                gap: 5px;
+                                border: 1px solid #656262;
+                                border-radius: 5px;
+                                padding: 5px 10px;
+                            }
+                            .price{
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .buyingProduct{
+                width: 30%;
+                height: 100%;
+                padding: 30px;
+                @media(max-width:1300px){
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                @media(max-width:1024px){
+                    width: 100%;
+                }
+                .justifyBetween{
+                    .left{
+                        gap: 10px;
+                        .total{
+                            font-size: 18px;
+                        }
+                    }
+                    .right{
+                        gap: 10px;
+                        font-size: 18px;
+                    }
+                }
+                hr{
+                    margin: 20px 0;
+                }
+                .checkout{
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+}
+
