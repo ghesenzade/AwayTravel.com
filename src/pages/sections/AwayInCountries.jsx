@@ -31,7 +31,7 @@ const MenuProps = {
   },
 };
 
-// ----------------------------------------------COUNTRIES----------------------------------------
+// ----------------------------------------------COUNTRIES (fake api)----------------------------------------
 const countries = [
   {
     id: 1,
@@ -86,7 +86,7 @@ const countries = [
   },
 ];
 
-const defaultCountry = 'NYC: NoHo';
+const defaultCountry = 'NYC: NoHo'; 
 
 const AwayInCountries = () => {
   const [selectedCountry, setSelectedCountry] = useState(defaultCountry);
@@ -106,6 +106,7 @@ const AwayInCountries = () => {
       <div className="container">
         <div className="row">
           <div className="awayInfo">
+
             <Box className='box' sx={{ minWidth: 120 }}>
               <FormControl fullWidth className='formControl'>
                 <InputLabel id="demo-simple-select-label">{t("home_sections.country.name")}</InputLabel>
@@ -128,7 +129,7 @@ const AwayInCountries = () => {
               </FormControl>
             </Box>
 
-{/* -------------------------CHANGING COUNTRIES AND ITS INFORMATION FROM COUNTRIES*(FAKE) API--- */}
+{/* -------------------------CHANGE COUNTRIES AND ITS INFORMATION FROM COUNTRIES*(FAKE) API--- */}
             {selectedCountry && (
               <div className="awayInfoHead">
                 <h2>{selectedCountry}</h2>
@@ -154,14 +155,16 @@ const AwayInCountries = () => {
               </div>
             )}
           </div>
+          {/* ------COUNTRY IMAGE----------- */}
           <div className="countryImg">
-        {selectedCountry && (
-          <img
-            src={countries.find((c) => c.name === selectedCountry).img}
-            alt={selectedCountry}
-          />
-        )}
-      </div>
+            {selectedCountry && (
+              <img
+                src={countries.find((c) => c.name === selectedCountry).img}
+                alt={selectedCountry}
+              />
+            )}
+          </div>
+          
         </div>
       </div>
       

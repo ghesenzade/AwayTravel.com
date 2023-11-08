@@ -13,10 +13,15 @@ import {
   FaArrowRightLong,
 } from "react-icons/fa6";
 
+
+
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [isValidEmail, setIsValidEmail] = useState(true);
+
+
+  const currentDate = new Date(); 
   const {t, i18n} = useTranslation();
 
   // --------------------------------------EMAIL VALIDATION---------------------------------
@@ -56,7 +61,7 @@ const Footer = () => {
                   <Link className="footerLink">{t("footer.shop.new")}</Link>
                 </li>
                 <li>
-                  <Link to="/ShopAll" className="footerLink">
+                  <Link to="/shop-all" className="footerLink">
                     {t("footer.shop.all")}
                   </Link>
                 </li>
@@ -69,42 +74,42 @@ const Footer = () => {
               <span>{t("footer.about.title")}</span>
               <ul className="footerMenu">
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.story")}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.stores")}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.career")}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.corporate")}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.impact")}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.press")}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.refer")}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="footerLink">
+                  <Link to="/about" className="footerLink">
                     {t("footer.about.sustainability")}
                   </Link>
                 </li>
@@ -123,7 +128,7 @@ const Footer = () => {
                   <Link className="footerLink">{t("footer.help.return")}</Link>
                 </li>
                 <li>
-                  <Link className="footerLink" to="/Contact">
+                  <Link className="footerLink" to="/contact">
                     {t("footer.help.contact")}
                   </Link>
                 </li>
@@ -218,7 +223,7 @@ const Footer = () => {
         <hr />
         <div className="row">
 {/* ------------------------------------------CHANGING LANGUAGE-------------------------------- */}
-          <div className="box">
+          <div className="box row">
             <button onClick={() => i18n.changeLanguage("en")}>EN</button>
             <button onClick={() => i18n.changeLanguage("az")}>AZ</button>
           </div>
@@ -229,8 +234,8 @@ const Footer = () => {
               <Link className="footerBottomLinks">{t("footer.footer_bottom.terms")}</Link>
               <Link className="footerBottomLinks">{t("footer.footer_bottom.accessibility")}</Link>
             </div>
-            <div className="footerBottomLinks date">
-              © <span> 2023 </span> JRSK, Inc.
+            <div className=" date">
+              © <span> {currentDate.getFullYear()}  </span>  JRSK, Inc.
             </div>
           </div>
         </div>

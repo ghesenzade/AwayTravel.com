@@ -210,6 +210,7 @@
         "title": "Edit Account Details",
         "account_btn": "SAVE CHANGES",
         "change_pwd": "Change Password",
+        "reset_pwd": "Reset Password",
         "sign_out": "SIGN OUT"
     },
 
@@ -306,9 +307,12 @@
         "pwd_validation": "Password is required",
         "pwd_validation_two": "Password must be at least 8 characters",
         "pwd_validation_three": "Password must contain at least one letter and one number",
+        "pwd_validation_four": "Password don't match",
 
 
         "submit": "SUBMIT",
+        "send_otp": "SEND OTP",
+        "confirm_otp": "Confirm OTP",
 
         "address": "Address",
         "address_validation": "Address is required",

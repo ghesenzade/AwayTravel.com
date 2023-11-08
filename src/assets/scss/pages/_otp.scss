@@ -1,0 +1,32 @@
+.otp{
+    padding: 150px 0 100px;
+    .container{
+        .column{
+            align-items: center;
+            justify-content: center;
+            form{
+                gap: 30px;
+                padding: 50px 0;
+                input{
+                    font-size: 24px;
+                    width: 100%;
+                    border: none;
+                    outline: 0;
+                    border-bottom: 1px solid #000;
+                }
+                button{
+                    margin: 0 auto;
+                    width: 100%;
+                    padding: 20px 100px;
+                    background-color: #000;
+                    color: #fff;
+                    border: none;
+                    transition: .3s ease all;
+                    &:hover{
+                        background-color: #514f4f;
+                    }
+                }
+            }
+        }
+    }
+}

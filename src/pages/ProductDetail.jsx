@@ -1,12 +1,15 @@
 import React, { useContext ,useState, useEffect } from 'react';
-import { CartContext } from '../utils/CartContext';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { formatImageUrl } from '../utils/utils';
-import { useTranslation } from 'react-i18next';
 
-//---------------------------------- icons--------------------------------------
-import { MdDoneAll } from "react-icons/md";
+import { formatImageUrl } from '../utils/utils'; // image urls
+
+import { useTranslation } from 'react-i18next'; //translation
+
+import { CartContext } from '../utils/CartContext'; //context
+
+
+import { MdDoneAll } from "react-icons/md"; //icon
 
 const Product = () => {
   const { t } = useTranslation();
@@ -31,7 +34,7 @@ const Product = () => {
 
 
   if (!product) {
-    return <div>Ürün bulunamadı.</div>;
+    return <div>Product does not find</div>;
   }
 
 
@@ -56,20 +59,22 @@ const Product = () => {
     <section className="productDetails">
       <div className="container">
       <div className="productDetailsContent row">
-        {/* <div className="productLeftPart"> */}
-          <div className="productImg" style={{backgroundImage: formatImageUrl(product?.productImage)}}>
-            <img className='image' src={formatImageUrl(product?.productImage)} alt={product.name} />
-          </div>
-        {/* </div> */}
-        <div className="productDetail">
+{/* -------------------------------image part------------------------------------- */}
+        <div className="detailProductImg" style={{backgroundImage: formatImageUrl(product?.productImage)}}>
+          <img className='image' src={formatImageUrl(product?.productImage)} alt={product.name} />
+        </div>
+{/* ----------------------------CART INFO PART--------------------------------------------------- */}
+        <div className="productDetailInfo">
+
           <div className="productMainInfo">
             <h2>{product?.name}</h2>
-            <p>{product?.price}</p>
+            <p>${product?.price}</p>
           </div>
+
           <div className="productInfo">
             <p className='detail'>{product?.details}</p>
-{/* ----------------------------------ADD TO CART BUTTON-------------------------------------------------- */}
-            <button className="addToCart" onClick={()=>addToCart(product)}>{t("product_detail.add_btn")} {product?.price}</button>
+
+            <button className="addToCart" onClick={()=>addToCart(product)}>{t("product_detail.add_btn")} ${product?.price}</button>
 
 {/* ----------------------------------INFO PART---------------------------------------------- */}
             <div className="additionalInfo">

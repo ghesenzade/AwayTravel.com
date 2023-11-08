@@ -208,6 +208,7 @@
         "title": "Hesab məlumatlarını dəyişdirin",
         "account_btn": "DƏYİŞİKLİKLƏRİ YADDA SAXLAYIN",
         "change_pwd": "Şifrəni dəyişdirin",
+        "reset_pwd": "Şifrəni dəyişdirin",
         "sign_out": "ÇIXIŞ"
     },
 
@@ -289,6 +290,8 @@
         "message": "Mesaj tələb olunur",
 
         "submit": "Göndər",
+        "send_otp": "OTP kodu yolla",
+        "confirm_otp": "OTP'ni təsdiqlə",
 
         "email": "Email",
         "email_validation": "Email adresinizi daxil edin",
@@ -308,6 +311,7 @@
         "pwd_validation": "Şifrənizi daxil edin",
         "pwd_validation_two": "Şifrə ən az 8 xarakterdən ibarət olmalıdı",
         "pwd_validation_three": "Şifrədə ən az bir hərf və ya rəqəm olmalıdı",
+        "pwd_validation_four": "Şifrələr uyğun gəlmir",
 
         "phone": "Telefon nömrəsi",
         "phone_validation": "Telefon nömrəsi tələb olunur",

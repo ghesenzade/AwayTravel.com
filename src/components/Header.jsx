@@ -33,7 +33,6 @@ export const Header = () => {
     setIsSearchingOpen(!isSearchingOpen);
   };
 
-
   const toggleHamburgerMenu = () => {
     setIsHamburgerMenuOpen(!isHamburgerMenuOpen);
   };
@@ -43,53 +42,52 @@ export const Header = () => {
       <div className="headerContent">
         <div className="container">
           <div className="row">
-            {/* <div className="hamburgerMenu" onClick={toggleHamburgerMenu}>
-              <HamburgerMenu/>
-            </div> */}
-
+{/* -----------------------------------HAMBURGER MENU--------------------------------------------- */}
+            <div className="hamburgerMenu">
+              <HamburgerMenu isOpen={isHamburgerMenuOpen} toggleMenu={toggleHamburgerMenu}  />
+            </div>
 {/* ---------------------------------------LOGO--------------------------------------------------- */}
             <div className="logo">
               <Link to="/" className="logoLink">
                 AWAY
               </Link>
             </div>
-
 {/* ----------------------------------------NAV-------------------------------------------------------- */}
             <nav>
               <ul className="navBar">
                 <li className="navList">
-                  <NavLink to="/ShopAll" className="navLink">
+                  <NavLink to="/shop-all" className="navLink">
                     {t("header.navbar.new_arrivals")}
                   </NavLink>
                 </li>
                 <li className="navList">
-                  <NavLink to="/ShopAll" className="navLink">
+                  <NavLink to="/shop-all" className="navLink">
                     {t("header.navbar.suitcases")}
                   </NavLink>
-                  <Suitcases />
+                  <Suitcases/>
                 </li>
                 <li className="navList">
-                  <NavLink to="/ShopAll" className="navLink">
+                  <NavLink to="/shop-all" className="navLink">
                     {t("header.navbar.bags")}
                   </NavLink>
-                  <Bags />
+                  <Bags/>
                 </li>
                 <li className="navList">
-                  <NavLink to="/ShopAll" className="navLink">
+                  <NavLink to="/shop-all" className="navLink">
                     {t("header.navbar.accessories")}
                   </NavLink>
-                  <Accessories />
+                  <Accessories/>
                 </li>
                 <li className="navList">
-                  <NavLink to="/ShopAll" className="navLink">
+                  <NavLink to="/shop-all" className="navLink">
                     {t("header.navbar.shop_all")}
                   </NavLink>
                 </li>
                 <li className="navList">
-                  <NavLink to="/ShopAll" className="navLink">
+                  <NavLink to="/shop-all" className="navLink">
                     {t("header.navbar.guides_and_collections")}
                   </NavLink>
-                  <Guides />
+                  <Guides/>
                 </li>
               </ul>
             </nav>
@@ -97,10 +95,10 @@ export const Header = () => {
             <div className="headerRight">
 {/* -----------------------------------LOGIN, ACCOUNT----------------------------------------- */}
               {userIn && (
-                  <Link to="/Account" className="logOut">{t("header.header_right.hi")}</Link>
+                  <Link to="/account" className="logOut logIn">{t("header.header_right.hi")}</Link>
               )}
               {!userIn && (
-                <Link to="/LogIn" className="logIn">
+                <Link to="/login" className="logIn">
                     {t("header.header_right.login")}
                 </Link>
               )}
@@ -116,7 +114,7 @@ export const Header = () => {
                 <li>
                   {userIn && (
                   <button className="cart">
-                    <Link className="cartIcon" to="/Cart">
+                    <Link className="cartIcon" to="/cart">
                       <CiRollingSuitcase />
                       <span>{count}</span>
                     </Link>
@@ -124,7 +122,7 @@ export const Header = () => {
                   )}
                   {!userIn && (
                   <button className="cart">
-                    <Link className="cartIcon" to="/LogIn">
+                    <Link className="cartIcon" to="/login">
                       <CiRollingSuitcase />
                       <span>{count}</span>
                     </Link>

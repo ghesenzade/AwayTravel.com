@@ -6,7 +6,9 @@ import { useTranslation } from 'react-i18next';
 import { Auth } from '../utils/AuthContext';
 
 const Account = () => {
-    const { userIn, signOut } = useContext(Auth);
+    const { userIn, signOut , } = useContext(Auth);
+    const { user } = useContext(Auth);
+    
 
     const {
         handleSubmit: handleSubmitChanges,
@@ -16,11 +18,12 @@ const Account = () => {
 
     
 
-// -------------------------------------CHANGE INFORMATION----------------------------------------------------
+    // CHANGE INFORMATION
     const onSubmitChanges = (data) => {
         console.log(data);
     };
-    
+
+    // translation
     const { t } = useTranslation();
     
     return (
@@ -41,12 +44,14 @@ const Account = () => {
                             <input
                                 type="text"
                                 placeholder={t("form.name")}
+                                defaultValue={user.name}
                                 {...registerChanges('firstName', { required: t("form.name_validation") })}
                             />
                             {changeErrors.firstName && <p>{changeErrors.firstName.message}</p>}
 
                             <input
                                 type="text"
+                                defaultValue={user.surname}
                                 placeholder={t("form.surname")}
                                 {...registerChanges('lastName', { required: t("form.surname_validation") })}
                             />
@@ -55,6 +60,7 @@ const Account = () => {
                             <input
                                 type="email"
                                 placeholder={t("form.email")}
+                                defaultValue={user.email}
                                 {...registerChanges('email', {
                                     required: t("form.email_validation"),
                                     pattern: {
@@ -68,10 +74,9 @@ const Account = () => {
                             <button type='submit'>{t("account_page.account_btn")}</button>
                         </form>
                     </div>
-
 {/* ---------------------------------CHANGE PASSWORD------------------------------------------------- */}
                     <div className="changePwd">
-                        <Link to="/ChangePassword">{t("account_page.change_pwd")}</Link>
+                        <Link to="/reset-password">{t("account_page.reset_pwd")}</Link>
                     </div>
 
                 </div>

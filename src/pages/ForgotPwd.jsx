@@ -6,12 +6,15 @@ const ForgotPwd = () => {
   return (
     <section className="forgotPwd">
         <div className="forgotContent">
+
             <div className="forgotTitle">
                 <h1>{t("login_sign.forgot_pwd")}</h1>
             </div>
+
             <div className="forgotInfo">
                 <p>{t("forgot_password.info")}</p>
             </div>
+            
             <div className="forgotForm">
                 <form>
                     <input type="email" placeholder={t("form.email")}/>

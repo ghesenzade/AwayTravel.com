@@ -12,12 +12,12 @@ const Bags = () => {
   return (
   <div className="bags dropDownMenu">
     <div className="dropDown">
-      <div className="row">
+      <div className="flex">
         <div className="dropDownPart">
           <span>{t("header.dropdown.dropdown_header.shop_by_category")}</span>
           <ul>
             <li>
-              <Link to="/shopAll" className="dropLink">
+              <Link to="/shop-all" className="dropLink">
                 {t("header.dropdown.dropdown_content.shop_all_bags")}
               </Link>
             </li>
@@ -47,7 +47,7 @@ const Bags = () => {
           <span>{t("header.dropdown.dropdown_header.shop_by_size")}</span>
           <ul>
             <li>
-              <Link to="/ShopAll" className="dropLink">
+              <Link to="/shop-all" className="dropLink">
                 {t("header.dropdown.dropdown_content.shop_all_bags")}
               </Link>
             </li>
@@ -77,7 +77,7 @@ const Bags = () => {
           <span>{t("header.dropdown.dropdown_header.featured")}</span>
           <ul>
             <li>
-              <Link to="/ShopAll" className="dropLink">
+              <Link to="/shop-all" className="dropLink">
                 {t("header.dropdown.dropdown_content.shop_all_bags")}
               </Link>
             </li>
@@ -103,7 +103,7 @@ const Bags = () => {
             <img src={Bag} alt="Bags" />
           </div>
           <Link className="link">
-          {t("header.dropdown.dropdown_content.bag_limited")} <FaArrowRight className="arrowIcon"/>
+              {t("header.dropdown.dropdown_content.bag_limited")} <FaArrowRight className="arrowIcon top"/>
           </Link>
         </div>
       </div>

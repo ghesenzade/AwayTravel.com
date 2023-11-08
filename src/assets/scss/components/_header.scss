@@ -13,12 +13,12 @@ header {
       .row {
         align-items: center;
         justify-content: space-between;
-        .hamburgerMenu{
-          display: none;
-          position: relative;
-          @media(max-width:1200px){
-            display: block;
-          }
+        .hamburgerMenu {
+            display: none;
+            cursor: pointer;
+            @media (max-width:1024px){
+              display: block;
+            }
         }
         .logo {
           font-weight: 500;
@@ -36,6 +36,9 @@ header {
           }
         }
         nav {
+          @media(max-width:1024px){
+            display: none;
+          }
           .navBar {
             display: flex;
             gap: 20px;
@@ -61,7 +64,7 @@ header {
                   width: 0%;
                   transform: scaleX(0);
                   height: 2px;
-                  bottom: 0;
+                  top: 20px;
                   left: 0;
                   background-color: #000;
                   transform-origin: bottom right;
@@ -81,12 +84,18 @@ header {
                   left: 0;
                   width: 100%;
                   background-color: #fff;
-                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                  box-shadow: 0 2px 4px #000;
                   z-index: 1;
-                  .row {
+                  .flex {
+                    display: flex ;
                     align-items: start;
                     justify-content: space-around;
                     text-align: start;
+                    @media (max-width:1024px) {
+                      display: flex;
+                      flex-direction: column ;
+                      align-items: start;
+                    }
                     .dropDownPart {
                       padding: 10px;
                       span {
@@ -135,7 +144,11 @@ header {
           gap: 10px;
           .logOut{
             color: #000;
-            // display: none;
+          }
+          .logIn{
+            @media(max-width:1024px){
+              display: none;
+            }
           }
           ul {
             display: flex;
@@ -148,13 +161,15 @@ header {
                 color: #000;
               }
               .search {
-                font-size: 18px;
+                padding-top: 2px;
+                font-size: 16px;
                 cursor: pointer;
+                @media(max-width:1024px){
+                  display: none;
+                }
               }
               .searching {
                 padding: 20px;
-                display: flex;
-                justify-content: space-between;
                 position: absolute;
                 top: 100%;
                 left: 0;
@@ -162,37 +177,55 @@ header {
                 background-color: #fff;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
                 z-index: 1;
-                form {
+                .form{
                   display: flex;
-                  gap: 10px;
-                  margin-left: 35rem;
-                  border: 0;
-                  outline: 0;
-                  border-bottom: 1px solid #000;
-                  input {
-                    width: 100%;
+                  justify-content: space-between;
+                  form {
+                    display: flex;
+                    gap: 10px;
+                    margin-left: 35rem;
                     border: 0;
+                    outline: 0;
+                    border-bottom: 1px solid #000;
+                    input {
+                      outline: 0;
+                      width: 100%;
+                      border: 0;
+                    }
+                    .searchIcon {
+                      cursor: pointer;
+                      font-size: 24px;
+                    }
                   }
-                  .searchIcon {
-                    font-size: 24px;
+                  span {
+                    font-size: 18px;
+                    cursor: pointer;
                   }
                 }
-                span {
-                  font-size: 18px;
-                  cursor: pointer;
+                ul{
+                  li{
+                    padding-top: 10px;
+                  }
                 }
               }
               .cart {
                 cursor: pointer;
                 position: relative;
                 .cartIcon {
-                  font-size: 24px;
+                  font-size: 28px;
                   color: #000;
                   span {
                     font-size: 14px;
                     position: absolute;
-                    top: 7px;
-                    right: 8px;
+                    top: 8px;
+                    right: 10px;
+                    @media(max-width: 1024px){
+                      top: 10px;
+                      right: 11px;
+                    }
+                  }
+                  @media(max-width: 1024px){
+                    font-size: 30px;
                   }
                 }
                 

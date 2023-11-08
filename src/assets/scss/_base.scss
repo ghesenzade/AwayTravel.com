@@ -31,6 +31,9 @@ section{
     color: #000;
     display: flex;
     gap: 8px;
+    .top{
+        padding-top: 3px;
+    }
     .arrowIcon{
         transition: all .3s cubic-bezier(.215,.61,.355,1);
     }
@@ -59,4 +62,7 @@ section{
     &:hover{
         background-color: #0a4ddc;
     }
+}
+button{
+    cursor: pointer;
 }

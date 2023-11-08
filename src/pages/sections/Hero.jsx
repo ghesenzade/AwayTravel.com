@@ -11,9 +11,11 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="row">
+        {/* ------------------HERO IMG----------------- */}
         <div className="heroImg">
           <img src={HeroImg} alt="HeroImg" />
         </div>
+        {/* -----------------HERO CONTENT------------------------ */}
         <div className="heroContent">
           <h1 className="heroTitle">
             <span>{t("home_sections.hero.hero_title1")}</span>

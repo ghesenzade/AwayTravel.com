@@ -13,11 +13,11 @@ const ShopAll = () => {
 // --------------------------------------GETTING DATA FROM API-------------------------------------------
   useEffect(() => {
     axios.get(process.env.REACT_APP_ALL_PRODUCTS) 
-      .then((response) => {
-        setProducts(response.data);
+      .then((res) => {
+        setProducts(res.data);
       })
-      .catch((error) => {
-        console.error("error: ", error);
+      .catch((err) => {
+        console.log(err);
       });
   }, []);
 
@@ -28,12 +28,15 @@ const ShopAll = () => {
       <div className="shopAll">
         <div className="container">
           <div className="shopTexts">
+
             <div className="shopHeaderText">
               <h1>{t("shop_all.title")}</h1>
             </div>
+
             <div className="shopInfo">
               <p>{t("shop_all.info")}</p>
             </div>
+            
           </div>
           <div className="allProducts">
             <div className='productCount'><p>{products.length} {t("shop_all.product_count")}</p></div>

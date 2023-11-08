@@ -18,7 +18,7 @@ const FavSection = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/away/products")
+      .get(process.env.REACT_APP_ALL_PRODUCTS)
       .then((res) => {
         const filteredProducts = res.data.slice(0, totalFeaturedProducts);
         setFeaturedProducts(filteredProducts);

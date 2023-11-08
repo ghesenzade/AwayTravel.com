@@ -19,38 +19,45 @@ import Sign from './pages/Sign';
 import Contact from './pages/Contact';
 import Account from './pages/Account';
 import CheckOut from './pages/CheckOut';
-import { ChangePassword } from './pages/ChangePassword';
+import { ResetPassword } from './pages/ResetPassword';
+import Otp from './pages/Otp';
+import ChangePassword from './pages/ChangePassword';
+
 
 
 // ----------------------------------CONTEXTS-------------------------------------------------
 import { CartProvider } from './utils/CartContext';
 import {AuthContext} from './utils/AuthContext';
+// import PrivateRoutes from './routers/privateRouter';
 
 const App = () => {
-
-
   return (
+  <CartProvider>
     <AuthContext>
-      <CartProvider>
         <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path="/ShopAll" element={<ShopAll/>} />
-          <Route path="/ProductDetail/:id" element={<ProductDetail/>} />
-          <Route path='/LogIn' element={<LogIn/>}/>
-          <Route path='/Sign' element={<Sign/>}/>
-          <Route path='/ForgotPwd' element={<ForgotPwd/>}/>
-          <Route path='/Cart' element={<Cart/>}/>
-          <Route path='/About' element={<About/>}/>
-          <Route path='/Contact' element={<Contact/>}/>
+          <Route path="/shop-all" element={<ShopAll/>} />
+          <Route path="/product-detail/:id" element={<ProductDetail/>} />
+          <Route path='/login' element={<LogIn/>}/>
+          <Route path='/sign' element={<Sign/>}/>
+          <Route path='/forgot-password' element={<ForgotPwd/>}/>
+          {/* <Route element={<PrivateRoutes/>}> */}
+            <Route path='/cart' element={<Cart/>}/>
+            <Route path='/account' element={<Account/>}/>
+            <Route path='/reset-password' element={<ResetPassword/>}/>
+            <Route path='/otp' element={<Otp/>}/>
+            <Route path='/change-password' element={<ChangePassword/>}/>
+          {/* </Route> */}
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
           <Route path='/*' element={<NotFound/>}/>
-          <Route path='/Account' element={<Account/>}/>
-          <Route path='/CheckOut' element={<CheckOut/>}/>
-          <Route path='/ChangePassword' element={<ChangePassword/>}/>
+          <Route path='/check-out' element={<CheckOut/>}/>
         </Routes>
         <Footer/>
-      </CartProvider>
     </AuthContext>
+  </CartProvider>
+
     
   )
 }

@@ -10,7 +10,7 @@ const Guides = () => {
   return (
   <div className="guide dropDownMenu">
     <div className="dropDown">
-      <div className="row">
+      <div className="flex">
         <div className="dropDownPart">
           <span>{t("header.dropdown.dropdown_header.featured")}</span>
           <ul>
@@ -71,7 +71,7 @@ const Guides = () => {
             <img src={Collection} alt="Collection" />
           </div>
           <Link className="link">
-            {t("header.dropdown.dropdown_content.upgrade")} <FaArrowRight className="arrowIcon"/>
+            {t("header.dropdown.dropdown_content.upgrade")} <FaArrowRight className="arrowIcon top"/>
           </Link>
         </div>
       </div>

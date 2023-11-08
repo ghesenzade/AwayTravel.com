@@ -18,16 +18,19 @@ const TravelSteps = () => {
     <section className='travelSteps'>
         <div className="container">
         <div className="column">
+            
             <div className="row">
                 <div className="travelImg">
                     <img src={Suitcases} alt="suitcases" />
                 </div>
+
                 <div className="steps">
                     <div className="stepTexts">
                         <p>{t("home_sections.travel.smoothly")}</p>
                         <h2>{t("home_sections.travel.travel_title_one")}</h2>
                         <p className="step">{t("home_sections.travel.steps")}</p>
                     </div>
+
                     <div className="productLinks">
                         <div className="flex">
                             <div className="travelProduct">
@@ -52,10 +55,12 @@ const TravelSteps = () => {
                     </div>
                 </div>
             </div>
+
             <div className="row rowReverse">
                 <div className="travelImg">
                     <img src={BagsImage} alt="bags" />
                 </div>
+
                 <div className="steps">
                     <div className="stepTexts">
                         <div className="stepText">
@@ -63,6 +68,7 @@ const TravelSteps = () => {
                             <h2>{t("home_sections.travel.travel_title_two")}</h2>
                             <p className="step">{t("home_sections.travel.time_fall")}</p>
                         </div>
+
                         <div className="productsLink">
                             <Link to="/ShopAll" className="link">
                                 <p className="shop">{t("home_sections.travel.shop_btn")}</p>

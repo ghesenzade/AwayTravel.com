@@ -15,6 +15,7 @@ export default function Sign() {
   const { showError } = useErrorMessage();
 
   const navigate = useNavigate()
+  
   const [activeTab, setActiveTab] = useState(0);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -33,7 +34,7 @@ export default function Sign() {
     .post(process.env.REACT_APP_REGISTER, data)
     .then(res=>{
       showSuccessMessage();
-      navigate("/LogIn")
+      navigate("/login")
     }).catch(err=>{
       console.error(err);
       showError();
@@ -53,20 +54,21 @@ export default function Sign() {
 {/* -------------------------------------TAB---------------------------------------------- */}
           <div className="tab">
             <div className="tabs">
+          {/* -----------------------------LOGIN TAB-------------------------- */}
               <button
                 className={`tabOne ${activeTab === 1 ? 'active' : ''}`}
                 onClick={() => handleTabChange(0)}
               >
-                <Link to="/LogIn" className="tabLinks">
+                <Link to="/login" className="tabLinks">
                   {t("login_sign.tab_one")}
                 </Link>
               </button>
-
+            {/* -------------------------SIGN TAB------------------------------ */}
               <button
                 className={`tabOne ${activeTab === 0 ? 'active' : ''}`}
                 onClick={() => handleTabChange(1)}
               >
-                <Link to="/Sign" className="tabLinks">
+                <Link to="/sign" className="tabLinks">
                   {t("login_sign.tab_two")}
                 </Link>
               </button>
@@ -75,6 +77,7 @@ export default function Sign() {
 {/* -------------------------------FORM---------------------------------------- */}
           <div className="customPanel row">
             <form onSubmit={handleSubmit(onSubmit)} className="registerForm column">
+              
               <input
                 type="text"
                 placeholder={t("form.name")}
@@ -101,7 +104,8 @@ export default function Sign() {
                 })}
               />
               {errors.email && <p>{errors.email.message}</p>}
-              <div className="formInput pwInput">
+
+              <div className="formInput pwdInput">
                 <input
                   className='pwd'
                   type={showPassword ? 'text' : 'password'}
@@ -133,7 +137,7 @@ export default function Sign() {
         </div>
         <div className="signText">
           <p>
-            {t("login_sign.sign_bottom")} <Link to="/privacyPolicy">{t("login_sign.sign_bottom2")}</Link> {t("login_sign.text3")} <Link to="/terms">{t("login_sign.text4")}</Link>. {t("login_sign.text5")}
+            {t("login_sign.sign_bottom")} <Link to="/privacy-policy">{t("login_sign.sign_bottom2")}</Link> {t("login_sign.text3")} <Link to="/terms">{t("login_sign.text4")}</Link>. {t("login_sign.text5")}
           </p>
         </div>
       </div>

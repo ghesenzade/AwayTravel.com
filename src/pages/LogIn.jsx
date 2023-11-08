@@ -1,18 +1,17 @@
 
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
-import axios from 'axios';
+import { Auth } from '../utils/AuthContext';
 
 
 export default function Tabs() {
   const { t }= useTranslation();
-
-  const navigate = useNavigate();
-
+  
+  const {logIn}=useContext(Auth);
   const [activeTab, setActiveTab] = useState(0);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -26,15 +25,8 @@ export default function Tabs() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    await axios
-    .post(process.env.REACT_APP_LOGIN, data)
-    .then(res=>{
-      localStorage.setItem("token", JSON.stringify(res.data.token));
-      navigate("/")
-    }).catch(err=>{
-      console.log(err);
-    })
+  const onSubmit = (data) => {
+    logIn(data);
   };
 
   return (
@@ -48,17 +40,20 @@ export default function Tabs() {
 {/* ------------------------------------------TAB---------------------------------------------- */}
           <div className="tab">
             <div className="tabs">
+          {/*---------------- ---login tab --------------------------*/}
               <button
                 className={`tabOne ${activeTab === 0 ? 'active' : ''}`}
                 onClick={() => handleTabChange(0)}
               >
-                <Link to='/LogIn'>{t("login_sign.tab_one")}</Link>
+                <Link to='/login'>{t("login_sign.tab_one")}</Link>
               </button>
+
+          {/*------------------------sign tab --------------------------*/}
               <button
                 className={`tabOne ${activeTab === 1 ? 'active' : ''}`}
                 onClick={() => handleTabChange(1)}
               >
-                <Link to='/Sign'>{t("login_sign.tab_two")}</Link>
+                <Link to='/sign'>{t("login_sign.tab_two")}</Link>
               </button>
             </div>
           </div>
@@ -66,6 +61,7 @@ export default function Tabs() {
           <div className="customPanel row">
             {activeTab === 0 && (
               <form onSubmit={handleSubmit(onSubmit)} className="loginForm registerForm column">
+                
                 <input
                   type="email"
                   placeholder = {t("form.email")}
@@ -107,6 +103,7 @@ export default function Tabs() {
                 <button type="submit">{t("login_sign.login_btn")}</button>
               </form>
             )}
+{/* -------------------------sign----------------------------------------------------------- */}
             {activeTab === 1 && (
               <form className="signForm registerForm column">
                 <input
@@ -149,7 +146,7 @@ export default function Tabs() {
       </div>
 {/* --------------------------FORGOT PASSWORD-------------------------------------------------------- */}
       <div className="forgotPwdText">
-        <Link to='/ForgotPwd' className='forgotPwd'>{t("login_sign.forgot_pwd")}</Link>
+        <Link to='/forgot-password' className='forgotPwd'>{t("login_sign.forgot_pwd")}</Link>
       </div>
     </section>
   );

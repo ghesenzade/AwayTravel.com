@@ -13,6 +13,7 @@ const About = () => {
     <section className="about">
         <div className="aboutInfo">
           <div className="infoContent">
+
               <div className="row">
                   <div className="infoImg">
                       <img src={Why} alt="Why" />
@@ -22,6 +23,7 @@ const About = () => {
                       <p>{t("about_page.about_content_one")}</p>
                   </div>
               </div>
+
               <div className="rowReverse row">
                   <div className="infoImg">
                       <img src={Approach} alt="Approach" />
@@ -31,6 +33,7 @@ const About = () => {
                       <p>{t("about_page.about_content_two")}</p>
                   </div>
               </div>
+              
               <div className="row">
                   <div className="infoImg">
                       <img src={Travel} alt="Travel" />

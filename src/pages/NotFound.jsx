@@ -15,12 +15,15 @@ const NotFound = () => {
   return (
     <section className="notFound">
         <div className="content">
+
             <div className="title">
                 <h1>{t("not_found.title")}</h1>
             </div>
+
             <div className="info">
                 <p>{t("not_found.info1")}<Link to='/' className="home"> {t("not_found.link")}</Link> {t("not_found.info2")}</p>
             </div>
+            
             <div className="productByCategory">
                 <div className="categoryTitle"><h3>{t("not_found.shop_by_category")}</h3></div>
                 <div className="products row">

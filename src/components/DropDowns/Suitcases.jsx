@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+// icon
 import { FaArrowRight } from "react-icons/fa6";
 
+// image
 import DropDownImgFirst from "../../assets/images/dropDownImgOne.webp";
 
 
@@ -12,12 +14,12 @@ const Suitcases = () => {
   return (
   <div className="suitcases dropDownMenu">
     <div className="dropDown">
-      <div className="row">
+      <div className="flex">
         <div className="dropDownPart">
           <span>{t("header.dropdown.dropdown_header.shop_by_size")}</span>
           <ul>
             <li>
-              <Link to="/shopAll" className="dropLink">
+              <Link to="/shop-all" className="dropLink">
                 {t("header.dropdown.dropdown_content.shop_all_suitcases")}
               </Link>
             </li>
@@ -47,7 +49,7 @@ const Suitcases = () => {
           <span>{t("header.dropdown.dropdown_header.shop_by_collection")}</span>
           <ul>
             <li>
-              <Link to="/shopAll" className="dropLink">
+              <Link to="/shop-all" className="dropLink">
                 {t("header.dropdown.dropdown_content.shop_all_suitcases")}
               </Link>
             </li>
@@ -93,7 +95,7 @@ const Suitcases = () => {
             <img src={DropDownImgFirst} alt="DropDownImage" />
           </div>
           <Link className="link">
-          {t("header.dropdown.dropdown_content.shop_limited")} <FaArrowRight className="arrowIcon"/>
+            {t("header.dropdown.dropdown_content.shop_limited")} <FaArrowRight className="arrowIcon top"/>
           </Link>
         </div>
       </div>

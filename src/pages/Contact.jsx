@@ -12,7 +12,7 @@ import { FaArrowRight } from 'react-icons/fa6';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Contact = () => {
-  const { showContactMessage } = useContactMessage();
+  const { showContactMessage } = useContactMessage(); //swal
 
   const {
     register,
@@ -23,7 +23,6 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     reset();
-    // console.log(data);
     showContactMessage();
   };
 
@@ -32,14 +31,14 @@ const Contact = () => {
   return (
     <section className="contact">
       <div className="contactContent">
+    {/* -------------------------CONTACT TOP PART--------------------------------------- */}
         <div className="contactTop row">
-
           <div className="contactImg">
             <img src={ContactHeroImg} alt="ContactHeroImg" />
           </div>
 
           <div className="contactHeroText column">
-
+            
             <div className="text">
               <h1>{t("contact_page.title")}</h1>
               <p>{t("contact_page.info")}</p>
@@ -78,8 +77,10 @@ const Contact = () => {
             <div className="bottomContent">
               <h2>{t("contact_page.form")}</h2>
               <p>{t("contact_page.get_info")}</p>
-{/*---------------------------------------------FORM-----------------------------------  */}
+
+{/*-----------------------------------------CONTACT BOTTOM PART --> FORM-----------------------------------  */}
               <form className="form column" onSubmit={handleSubmit(onSubmit)}>
+
                 <input
                   type="text"
                   placeholder={t("form.full_name")}
@@ -90,6 +91,7 @@ const Contact = () => {
                 {errors.fullName && (
                   <span className="errorMessage">{errors.fullName.message}</span>
                 )}
+
                 <input
                   type="email"
                   placeholder={t("form.email")}
@@ -101,9 +103,8 @@ const Contact = () => {
                     },
                   })}
                 />
-                {errors.email && (
-                  <span className="errorMessage">{errors.email.message}</span>
-                )}
+                {errors.email && (<span className="errorMessage">{errors.email.message}</span>)}
+
                 <input
                   type="text"
                   placeholder={t("form.help")}
@@ -111,9 +112,7 @@ const Contact = () => {
                     required: t("form.message"),
                   })}
                 />
-                {errors.message && (
-                  <span className="errorMessage">{errors.message.message}</span>
-                )}
+                {errors.message && (<span className="errorMessage">{errors.message.message}</span>)}
 
                 <button type="submit" className="submit-button">
                   {t("form.submit")}

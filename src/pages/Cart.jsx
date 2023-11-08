@@ -1,10 +1,13 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
+
 import { useTranslation } from "react-i18next";
 
 // icon
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaX} from "react-icons/fa6";
+
 
 import { CartContext } from "../utils/CartContext";
 import { formatImageUrl } from "../utils/utils";
@@ -14,31 +17,38 @@ const Cart = () => {
 
   const { cart, removeFromCart, addToCart, decrement, increment, totalPrice } = useContext(CartContext);
 
-  const renderCartItems = () => {
-    // if (cart.length === 0) {
-    //   return <p>{t("cart.info")}</p>;
-    // }
+  
 // ----------------------------------CART--------------------------------------------
+  const renderCartItems = () => {
     return cart.map((product) => (
       <div key={product.id} className="cartInfo cartContentParts row">
+        {/* -------------------cart image-------------------- */}
+
         <div className="cartImg">
           <img src={formatImageUrl(product.productImage)} alt={product.name} />
         </div>
-        <div className="cartInfoRightSide justifyBetween">
-          <div className="nameAndX justifyBetween">
-            <h3>{product.name}</h3>
-            <p className="x" onClick={() => removeFromCart(product.id)}>
-              X
-            </p>
+
+        {/* --------------------cart info---------------------- */}
+        <div className="cartInfoRightSide">
+
+          <div className="nameAndX">
+            <div className="justifyBetween">
+              <h3>{product.name}</h3>
+              <p className="x" onClick={() => removeFromCart(product.id)}>
+                <FaX/>
+              </p>
+            </div>
           </div>
+
           <div className="numAndPrice justifyBetween">
             <div className="numOfProduct row">
               <FaMinus onClick={() => decrement(product)} />
               <span>{product.quantitiy}</span>
               <FaPlus onClick={() => increment(product)} />
             </div>
-            <div className="price row">{product.price}</div>
+            <div className="price row">${product.price}</div>
           </div>
+
         </div>
       </div>
     ));
@@ -72,15 +82,15 @@ const Cart = () => {
               </div>
               <div className="productLinks">
                 <div className="productLink row">
-                  <Link to="/ShopAll" className="shopProduct">
+                  <Link to="/shop-all" className="shopProduct">
                     {t("cart.shop_suit")}
                   </Link>
 
-                  <Link to="/ShopAll" className="shopProduct">
+                  <Link to="/shop-all" className="shopProduct">
                     {t("cart.shop_bag")}
                   </Link>
 
-                  <Link to="/ShopAll" className="shopProduct">
+                  <Link to="/shop-all" className="shopProduct">
                     {t("cart.shop_accessories")}
                   </Link>
                 </div>
@@ -89,9 +99,11 @@ const Cart = () => {
 {/*-------------------------------------- ADVICES CARTS --------------------------------------------*/}
             <div className="advices">
               <div className="column">
+
                 <div className="advicesTitle">
                   <h3>{t("cart.advice")}</h3>
                 </div>
+
                 <div className="advicesCards row">
                   {featuredProducts.map((product) => (
                     <div className="oneAdviceCard" key={product.id}>
@@ -132,10 +144,10 @@ const Cart = () => {
                 <h1>{t("cart.title")}</h1>
               </div>
               <div className="cartContent row">
-{/* ---------------------------------CART-------------------------------------------------------------- */}
+    {/*------------------------CALLING CART----------------------------------*/}
                 <div className="renderCart column">{renderCartItems()}</div>
 
-{/* -------------------------------BUYING CART--------------------------------------------------------- */}
+    {/*----- -------------------BUYING CART---------------------------------------- */}
                 <div className="buyingProduct cartContentParts">
                   <div className="justifyBetween">
                     <div className="left column">
@@ -146,16 +158,16 @@ const Cart = () => {
                       </p>
                     </div>
                     <div className="right column">
-                      <p>{totalPrice}</p>
+                      <p>${totalPrice}</p>
                       <p>{t("cart.free")}</p>
                       <p className="totalPrice">
-                        <b>{totalPrice}</b>
+                        <b>${totalPrice}</b>
                       </p>
                     </div>
                   </div>
                   <hr />
 
-                  <Link to="/Checkout" className="checkout shopProduct">
+                  <Link to="/check-out" className="checkout shopProduct">
                     {t("cart.checkout_btn")}
                   </Link>
 

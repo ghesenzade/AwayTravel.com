@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-// images
+// ---------------------------------------IMAGES----------------------------------------------------
 import Vogue from "../../assets/images/Vogue5.webp";
 import WSJ from "../../assets/images/WSJ5.webp";
 import Observer from "../../assets/images/Observer5.webp";
@@ -44,6 +44,7 @@ const HomeSlide = () => {
               </div>
             </div>
           </SwiperSlide>
+
           <SwiperSlide className='swiperSlide'>
             <div className="column">
               <div className="quote"><p><q>{t("home_sections.slider.slide_two")}</q></p></div>
@@ -52,6 +53,7 @@ const HomeSlide = () => {
               </div>
             </div>
           </SwiperSlide>
+
           <SwiperSlide className='swiperSlide'>
             <div className="column">
               <div className="quote"><p><q>{t("home_sections.slider.slide_three")}</q></p></div>
@@ -60,6 +62,7 @@ const HomeSlide = () => {
               </div>
             </div>
           </SwiperSlide>
+
         </Swiper>
       </div>
     </section>

@@ -1,12 +1,13 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Auth = createContext();
 
 export const AuthContext = ({children}) =>{
-
-    const[userIn, setUserIn] = useState(false)
-    // const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
+    const[userIn, setUserIn] = useState(false);
+    const [user, setUser] = useState({})
 
     useEffect(()=>{
         checkLogin()
@@ -15,21 +16,33 @@ export const AuthContext = ({children}) =>{
 // ---------------------------------CHECKING LOGIN----------------------------------------------
 
     const checkLogin = async () =>{
-        // setLoading(true);
         const data = {
             token: JSON.parse(localStorage.getItem("token")),
+        };
+        if(data.token!==null){
+                await axios.post(process.env.REACT_APP_CHECK_LOGIN, data)
+            .then(res=>{
+                setUser(res.data);
+                setUserIn(true);
+            }).catch(err=>{
+                setUserIn(false);
+            })
         }
-        await axios.post(process.env.REACT_APP_CHECK_LOGIN, data)
-        .then(res=>{
-            console.log(res);
-            setUserIn(true);
-            // setLoading(false);
-        }).catch(err=>{
-            console.log(err);
-            setUserIn(false);
-            // setLoading(false);
-        })
+        
     };
+
+// -----------------------------------LOGIN-------------------------------------------------------
+    const logIn = async (data)=>{
+        await axios
+            .post(process.env.REACT_APP_LOGIN, data)
+            .then(res=>{
+                localStorage.setItem("token", JSON.stringify(res.data.token));
+                navigate("/");
+                window.location.reload();
+            }).catch(err=>{
+                console.log(err);
+            });
+    }
 // --------------------------------------SIGN OUT-----------------------------------------
     const signOut = ()=>{
         localStorage.removeItem("token");
@@ -39,8 +52,11 @@ export const AuthContext = ({children}) =>{
     const globalStates = {
         userIn,
         setUserIn,
+        user,
+        setUser,
         // function
-        signOut
+        signOut,
+        logIn
     };
     
     return <Auth.Provider value={globalStates}>{children}</Auth.Provider>;

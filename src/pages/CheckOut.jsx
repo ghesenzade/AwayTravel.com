@@ -3,11 +3,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
-import { CheckOutCard } from "../components/CheckOutCard";
 import { useCheckOutMessage } from "../utils/Swal"
 
 function CheckOut() {
-  const { showCheckOutMessage } = useCheckOutMessage();
+  const { showCheckOutMessage } = useCheckOutMessage(); //swal
 
   const {
     register,
@@ -16,16 +15,19 @@ function CheckOut() {
     reset,
   } = useForm();
 
+// -----------------------------------------SUBMISSION-------------------------------
   const onSubmit = (data) => {
     reset();
     showCheckOutMessage();
   };
+
+
   const { t }= useTranslation();
 
   return (
     <section className="checkOut">
       <div className="container">
-        <div className="checkOutContent row">
+        <div className="checkOutContent">
           <div className="checkForm column">
 {/* -------------------------------title------------------------------------------ */}
             <div className="checkTitle">
@@ -112,31 +114,6 @@ function CheckOut() {
               <button type="submit">{t("form.submit")}</button>
 
             </form>
-          </div>
-
-{/* -------------------------------ORDER PART----------------------------------------------------- */}
-          <div className="order">
-            <div className="orderTitle">
-              <h3>{t("checkout_page.order")}</h3>
-            </div>
-            <div className="products column">
-              <div className="checkOutCard">
-                <CheckOutCard/>
-              </div>
-              <div className="subtotal row justifyBetween">
-                <p>{t("cart.subtotal")}</p>
-                <p>$980</p>
-              </div>
-              <div className="shipping row justifyBetween">
-                <p>{t("cart.shipping")}</p>
-                <p>{t("cart.free")}</p>
-              </div>
-              <hr />
-              <div className="total row justifyBetween">
-                <h4>{t("cart.total")}</h4>
-                <h4>$980</h4>
-              </div>
-            </div>
           </div>
         </div>
       </div>

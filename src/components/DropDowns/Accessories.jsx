@@ -12,7 +12,7 @@ const Accessories = () => {
   return (
 <div className="accessories dropDownMenu">
     <div className="dropDown">
-        <div className="row">
+        <div className="flex">
             <div className="dropDownPart">
                 <span>{t("header.dropdown.dropdown_header.shop_by_category")}</span>
                 <ul>
@@ -28,7 +28,7 @@ const Accessories = () => {
                 <div className="dropImg">
                     <img src={Accessorie} alt="accessories" />
                 </div>
-                <Link className="link">{t("header.dropdown.dropdown_content.pack")} <FaArrowRight className="arrowIcon"/></Link>
+                <Link className="link">{t("header.dropdown.dropdown_content.pack")} <FaArrowRight className="arrowIcon top"/></Link>
             </div>
         </div>
     </div>

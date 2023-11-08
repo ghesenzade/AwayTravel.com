@@ -10,7 +10,8 @@ export const ProductCard = ({
     }) => {
     return (
     <div className={`productCard ${id}`}>
-        <Link to={`/ProductDetail/${id}`} className='productImgLink'>
+        
+        <Link to={`/product-detail/${id}`} className='productImgLink'>
             <div className="productImg">
                 <img
                     src={productImage}
@@ -19,12 +20,13 @@ export const ProductCard = ({
                 />
             </div>
         </Link>
+
         <div className="productInfo">
-            <Link to={`/Product/${id}`} className='productLink'>
+            <Link to={`/product/${id}`} className='productLink'>
                 <p>{name}</p>
             </Link>
-            <div className="productDetail">
-                <p className='price'>{price}</p>
+            <div className="product-detail">
+                <p className='price'>${price}</p>
             </div>
         </div>
     </div>
