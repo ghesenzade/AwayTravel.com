@@ -28,7 +28,6 @@ import ChangePassword from './pages/ChangePassword';
 // ----------------------------------CONTEXTS-------------------------------------------------
 import { CartProvider } from './utils/CartContext';
 import {AuthContext} from './utils/AuthContext';
-// import PrivateRoutes from './routers/privateRouter';
 
 const App = () => {
   return (
@@ -42,13 +41,13 @@ const App = () => {
           <Route path='/login' element={<LogIn/>}/>
           <Route path='/sign' element={<Sign/>}/>
           <Route path='/forgot-password' element={<ForgotPwd/>}/>
-          {/* <Route element={<PrivateRoutes/>}> */}
+
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/account' element={<Account/>}/>
             <Route path='/reset-password' element={<ResetPassword/>}/>
             <Route path='/otp' element={<Otp/>}/>
             <Route path='/change-password' element={<ChangePassword/>}/>
-          {/* </Route> */}
+
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/*' element={<NotFound/>}/>
