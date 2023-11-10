@@ -4,7 +4,7 @@ import axios from "axios";
 
 import { useTranslation } from "react-i18next";
 
-// icon
+//----- icons---------------
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { FaX} from "react-icons/fa6";
 
@@ -82,6 +82,7 @@ const Cart = () => {
               </div>
               <div className="productLinks">
                 <div className="productLink row">
+
                   <Link to="/shop-all" className="shopProduct">
                     {t("cart.shop_suit")}
                   </Link>
@@ -136,6 +137,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
+          
         ) : (
 // --------------------------------CART FULL----------------------------------------------------------
           <section className="cartPage">

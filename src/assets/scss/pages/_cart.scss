@@ -24,8 +24,15 @@
                     justify-content: space-evenly;
                     width: 60%;
                     margin: 0 auto;
+                    gap: 10px;
+                    @media (max-width:1206px) {
+                        width: 100%;
+                    }
+                    @media (max-width:1206px) {
+                        flex-direction: column;
+                    }
                     .shopProduct{
-                        width: 30%;
+                        width: 100%;
                     }
                 }
             }

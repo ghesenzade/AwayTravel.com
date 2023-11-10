@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-// components
+//------------------------------------ COMPONENTS-------------------------------------------------
 import { Header } from './components/Header';
 import Footer from "./components/Footer";
 
-// pages
+//----------------------------------------PAGES----------------------------------------------------
 import Home from './pages/Home';
 import ShopAll from './pages/ShopAll';
 import ProductDetail from './pages/ProductDetail';
